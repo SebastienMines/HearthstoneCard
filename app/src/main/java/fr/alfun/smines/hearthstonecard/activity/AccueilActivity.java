@@ -11,7 +11,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import fr.alfun.smines.hearthstonecard.R;
 
-public class AccueilActivity extends AppCompatActivity {
+public class AccueilActivity extends BaseActivity {
 
     @BindView(R.id.input_rechercher_all_accueil)EditText recherche;
     @BindView(R.id.button_banniere_naxxramax)

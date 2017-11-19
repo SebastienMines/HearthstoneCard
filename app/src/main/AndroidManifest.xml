@@ -7,7 +7,7 @@
     <application
         android:name=".activity.CalligraphyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/launch_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -30,9 +30,14 @@
             android:name=".activity.CarteActivity">
         </activity>
 
-        <activity android:name=".activity.ExtensionActivity">
-
+        <activity
+            android:name=".activity.ExtensionActivity">
         </activity>
+
+        <activity
+            android:name=".activity.BaseActivity">
+        </activity>
+
     </application>
 
 </manifest>

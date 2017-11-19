@@ -12,9 +12,9 @@ import fr.alfun.smines.hearthstonecard.R;
  * Created by aordogh on 17/11/2017.
  */
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends BaseActivity {
 
-    private static int SPLASH_TIME_OUT = 3000;
+    private static int SPLASH_TIME_OUT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -22,7 +22,7 @@ import fr.alfun.smines.hearthstonecard.viewModel.CarteViewModel;
  * Created by s.mines on 19/11/2017.
  */
 
-public class CarteActivity extends AppCompatActivity implements CarteActivityView{
+public class CarteActivity extends BaseActivity implements CarteActivityView{
 
     public static final String NAME_CARD = "name_card";
 
