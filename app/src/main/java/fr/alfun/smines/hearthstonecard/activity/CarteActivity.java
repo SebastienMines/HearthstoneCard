@@ -2,6 +2,7 @@ package fr.alfun.smines.hearthstonecard.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -65,7 +66,7 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
 
     @Override
     public void displayCarteText(CarteViewModel viewModel) {
-        carteTextView.setText(viewModel.getText());
+        carteTextView.setText(Html.fromHtml(viewModel.getText()));
     }
 
     @Override
