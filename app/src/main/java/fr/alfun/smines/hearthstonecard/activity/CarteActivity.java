@@ -1,8 +1,12 @@
 package fr.alfun.smines.hearthstonecard.activity;
 
+import android.animation.Animator;
+import android.animation.AnimatorInflater;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,10 +29,13 @@ import fr.alfun.smines.hearthstonecard.viewModel.CarteViewModel;
 public class CarteActivity extends AppCompatActivity implements CarteActivityView{
 
     public static final String NAME_CARD = "name_card";
+    public Animator animator;
 
     @Inject
     MyCartePresenter presenter;
 
+    @BindView(R.id.loading)
+    ImageView imageLoading;
     @BindView(R.id.name_carte_solo)
     TextView carteNameTextView;
     @BindView(R.id.image_carte)
@@ -47,6 +54,9 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
                 .inject(this);
         setContentView(R.layout.carte);
         ButterKnife.bind(this);
+        animator = AnimatorInflater.loadAnimator(this, R.animator.anim);
+        animator.setTarget(imageLoading);
+        animator.start();
         String carteName = getIntent().getExtras().getString(NAME_CARD);
         if (carteName != null) {
             presenter.load(carteName);
@@ -60,6 +70,12 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
 
     @Override
     public void displayCarteImg(CarteViewModel viewModel) {
+        animator.end();
+        Picasso.with(this)
+                .load(R.drawable.launch_icon)
+                .resize(1,1)
+                .into(imageLoading);
+        imageLoading.setVisibility(View.INVISIBLE);
         Picasso.with(this)
                 .load(viewModel.getImg())
                 .resize(1842, 2790)
@@ -78,11 +94,29 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
 
     @Override
     public void displayCarteNotFound() {
-
+        animator.end();
+        Picasso.with(this)
+                .load(R.drawable.launch_icon)
+                .resize(1,1)
+                .into(imageLoading);
+        imageLoading.setVisibility(View.INVISIBLE);
+        Picasso.with(this)
+                .load("https://s3.amazonaws.com/cardgenhs/t/PeKiCNby.png")
+                .resize(1842, 2790)
+                .into(imageCarte);
     }
 
     @Override
     public void displayError() {
-
+        animator.end();
+        Picasso.with(this)
+                .load(R.drawable.launch_icon)
+                .resize(1,1)
+                .into(imageLoading);
+        imageLoading.setVisibility(View.INVISIBLE);
+        Picasso.with(this)
+                .load("https://s3.amazonaws.com/cardgenhs/t/PeKiCNby.png")
+                .resize(1842, 2790)
+                .into(imageCarte);
     }
 }

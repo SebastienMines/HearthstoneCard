@@ -20,29 +20,25 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="top"
-            android:layout_weight="1"
-            android:src="@drawable/placeholder_card" />
+            android:layout_weight="1" />
 
 
         <TextView style="@style/appTheme"
             android:id="@+id/name_carte_solo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tirion"
             android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/text_carte_solo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Text"
             android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/text_carte_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description"
             android:textColor="@color/black"/>
 
         <LinearLayout
@@ -58,6 +54,14 @@
                 android:textColor="@color/black"/>
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:src="@drawable/launch_icon" />
 
     </LinearLayout>
 
