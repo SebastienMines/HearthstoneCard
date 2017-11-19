@@ -16,6 +16,6 @@ public interface HearthstoneService {
     @Headers({
             "X-Mashape-Key: f7pY3SgA7Umsh2HCYXbINnBA8IpQp1vVPiljsn4MkWZl3DXzfy"
     })
-    @GET("cards/{name}")
+    @GET("cards/{name}?collectible=1&locale=frFR")
     Call<List<Carte>> getCardByName(@Path("name") String name);
 }
