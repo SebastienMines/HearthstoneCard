@@ -17,6 +17,6 @@ public interface ExtensionService {
     @Headers({
             "X-Mashape-Key: f7pY3SgA7Umsh2HCYXbINnBA8IpQp1vVPiljsn4MkWZl3DXzfy"
     })
-    @GET("cards/search/{set}?collectible=1&locale=frFR")
+    @GET("cards/sets/{set}?collectible=1&locale=frFR")
     Call<Extension> getCardByExtension(@Path("set") String name);
 }
