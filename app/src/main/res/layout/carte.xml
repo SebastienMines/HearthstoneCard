@@ -2,6 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/appTheme"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -21,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:scaleType="fitStart"
+            android:scaleType="fitXY"
             android:src="@drawable/placeholder_card" />
 
 
@@ -49,19 +50,12 @@
             android:gravity="center"
             android:textColor="@color/black"/>
 
-        <LinearLayout
+
+        <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
-
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/description_acces_rage"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
+            android:text="@string/description_acces_rage"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

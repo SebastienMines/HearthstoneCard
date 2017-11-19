@@ -3,6 +3,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/appTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -34,7 +35,7 @@
                 android:background="@color/white"
                 android:state_enabled="true"
                 android:hint="@string/input_accueil"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button_rechercher_all_accueil"
@@ -46,9 +47,9 @@
                 android:background="@color/green"
                 android:gravity="center"
                 android:text="@string/go"
+                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
