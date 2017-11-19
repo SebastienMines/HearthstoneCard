@@ -8,14 +8,14 @@
     android:background="@drawable/dos_carte">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/naxxramax"/>
+        android:src="@drawable/hearthstone_return_lich_king" />
 
 
     <ListView
         android:id="@+id/lv1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    
+
 </LinearLayout>
