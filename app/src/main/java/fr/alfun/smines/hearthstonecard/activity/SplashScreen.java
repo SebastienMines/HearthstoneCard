@@ -1,20 +1,18 @@
 package fr.alfun.smines.hearthstonecard.activity;
 
-import android.app.Activity;
-import android.content.Context;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 
 import fr.alfun.smines.hearthstonecard.R;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
 
 /**
  * Created by aordogh on 17/11/2017.
  */
 
-public class SplashScreen extends Activity {
+public class SplashScreen extends AppCompatActivity {
 
     private static int SPLASH_TIME_OUT = 3000;
 
