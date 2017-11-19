@@ -37,7 +37,4 @@ public class SplashScreen extends Activity {
 
     }
 
-    protected void attachedBaseContext(Context context){
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(context));
-    }
 }

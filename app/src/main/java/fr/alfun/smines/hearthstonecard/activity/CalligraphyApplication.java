@@ -1,8 +1,11 @@
 package fr.alfun.smines.hearthstonecard.activity;
 
 import android.app.Application;
+import android.content.Context;
+
 import fr.alfun.smines.hearthstonecard.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 /**
@@ -16,9 +19,14 @@ public class CalligraphyApplication extends Application {
         super.onCreate();
         CalligraphyConfig.initDefault(
                 new CalligraphyConfig.Builder()
-                .setDefaultFontPath("")
+                .setDefaultFontPath("fonts/Belwe-Bold.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 }
