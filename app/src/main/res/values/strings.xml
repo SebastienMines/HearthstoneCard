@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HearthstoneCard</string>
+
+    <!-- accueil -->
+    <string name="bouton_accueil">Entrer dans l\'auberge</string>
+    <string name="input_accueil">Rechercher une carte</string>
+    <string name="accueil_liste_extension">LISTE DES EXTENSIONS</string>
+    <string name="go">Go</string>
+
+    <!-- Description des capacités hearthstone -->
+    <string name="description_cri_de_guerre">Lorsque ce serviteur arrive en jeu, l\'effet décrit dans l\'encadré est produit.</string>
+    <string name="description_charge">Ce serviteur peut attaquer dès le tour où il arrive en jeu.</string>
+    <string name="description_choix_des_armes">Cette carte vous permet de choisir, entre deux effets, celui que vous souhaitez. Cette compétence est exclusive pour le Druide.</string>
+    <string name="description_combo">Si vous avez joué une carte avant celle-ci pendant ce tour, l\'effet décrit dans l\'encadré se produit. Cette capacité est exclusive pour le Voleur.</string>
+    <string name="description_rale_agonie">Lorsque ce serviteur meurt, l\'effet décrit dans l\'encadré se produit.</string>
+    <string name="description_bouclier_divin">Le Bouclier Divin protège ce serviteur des dégâts qu\'il devrait subir. Une fois utilisé, le Bouclier Divin disparaît.</string>
+    <string name="description_acces_rage">Si ce serviteur subit des dégâts non mortels, son attaque est augmentée de X (effet non cumulable).</string>
+    <string name="description_gele">Les personnages gelés ne peuvent plus attaquer au prochain tour.</string>
+    <string name="description_insensible">Confère au Héros ou au serviteur ciblé l\'immunité. Il ne subit aucun dégât tant qu\'il a l\'immunité. En général, l\'effet dure jusqu\'à la fin du tour.</string>
+    <string name="description_surcharge">Au début de votre prochain tour, Surchage réduira le nombre de vos cristaux de mana disponibles. Il s\'agit d'un malus qui compense la puissance de ce serviteur.</string>
+    <string name="description_degat_sort">La valeur de tous les sorts infligeant des dégâts ou rendant des points de vie est augmentée de X. Cela n\'inclut pas les compétences spéciales des Héros.</string>
+    <string name="description_silence">Annule toutes les compétences spéciales de la cible tant que celle-ci est en jeu.</string>
+    <string name="description_camouflage">Ce serviteur, qui est camouflé, ne peut être la cible de sorts. Il ne peut pas non plus être attaqué par d\'autres serviteurs ou le Héros adverse. Lorsque le serviteur camouflé attaque, il perd son camouflage. Attention, même camoufflé le serviteur camouflé peut subir des sorts à effet de zone.</string>
+    <string name="description_provocation">Si l\'adversaire attaque, il doit impérativement détruire les serviteurs qui affichent Provocation avant d\'attaquer une autre cible. L\'adversaire peut toutefois choisir quels serviteurs il attaquera en premier avec Provocation.</string>
+    <string name="description_transformation">Transforme un serviteur en une autre créature de façon irréversible.</string>
+    <string name="description_furie_des_vents">Ce serviteur peut attaquer 2 fois par tour.</string>
+</resources>

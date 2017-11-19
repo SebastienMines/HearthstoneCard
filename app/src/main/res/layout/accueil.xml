@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context="fr.alfun.smines.hearthstonecard.activity.AccueilActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="top"
+            android:src="@drawable/hearthstone_fond_accueil" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/input_rechercher_all_accueil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:state_enabled="true"
+                android:hint="@string/input_accueil"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_rechercher_all_accueil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:state_enabled="true"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="@string/go"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/texte_liste_extension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/accueil_liste_extension"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_naxxramax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_naxxramax" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_meca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_meca" />
+        <ImageButton
+            android:id="@+id/button_banniere_rochenoir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_rochenoir" />
+        <ImageButton
+            android:id="@+id/button_banniere_tournois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_tournois" />
+        <ImageButton
+            android:id="@+id/button_banniere_explorateur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_explorateur" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_dieux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_dieux" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_kharazan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_kharazan" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_gadgetzan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_gadgetzan" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_ungoro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_ungoro" />
+
+        <ImageButton
+            android:id="@+id/button_banniere_trone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/white"
+            android:gravity="top"
+            android:src="@drawable/banniere_trone" />
+
+    </LinearLayout>
+
+</ScrollView>
