@@ -23,7 +23,7 @@ import fr.alfun.smines.hearthstonecard.viewModel.ExtensionViewModel;
  * Created by s.mines on 19/11/2017.
  */
 
-public class ExtensionActivity extends AppCompatActivity implements ExtensionActivityView{
+public class ExtensionActivity extends BaseActivity implements ExtensionActivityView{
 
     public static final String NAME_EXTENSION = "name_extension";
 

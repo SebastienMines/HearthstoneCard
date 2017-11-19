@@ -25,8 +25,4 @@ public class CalligraphyApplication extends Application {
         );
     }
 
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
 }
