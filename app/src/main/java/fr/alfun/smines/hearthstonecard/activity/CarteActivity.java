@@ -32,6 +32,8 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
     TextView carteNameTextView;
     @BindView(R.id.image_carte)
     ImageView imageCarte;
+    @BindView(R.id.text_carte_solo)
+    TextView carteTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,11 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
                 .load(viewModel.getImg())
                 .resize(1842, 2790)
                 .into(imageCarte);
+    }
+
+    @Override
+    public void displayCarteText(CarteViewModel viewModel) {
+        carteTextView.setText(viewModel.getText());
     }
 
     @Override

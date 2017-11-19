@@ -29,6 +29,10 @@
         <activity
             android:name=".activity.CarteActivity">
         </activity>
+
+        <activity android:name=".activity.ExtensionActivity">
+
+        </activity>
     </application>
 
 </manifest>

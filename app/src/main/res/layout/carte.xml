@@ -27,7 +27,13 @@
             android:id="@+id/name_carte_solo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Tirion" />
+
+        <TextView
+            android:id="@+id/text_carte_solo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text" />
 
         <LinearLayout
             android:layout_width="match_parent"

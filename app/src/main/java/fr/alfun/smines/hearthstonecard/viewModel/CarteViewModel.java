@@ -7,10 +7,12 @@ package fr.alfun.smines.hearthstonecard.viewModel;
 public class CarteViewModel {
     private final String name;
     private final String img;
+    private final String text;
 
-    public CarteViewModel(String name, String img) {
+    public CarteViewModel(String name, String img, String text) {
         this.name = name;
         this.img = img;
+        this.text = text;
     }
 
     public String getName() {
@@ -19,5 +21,9 @@ public class CarteViewModel {
 
     public String getImg() {
         return img;
+    }
+
+    public String getText() {
+        return text;
     }
 }

@@ -9,6 +9,7 @@ import fr.alfun.smines.hearthstonecard.viewModel.CarteViewModel;
 public interface CarteActivityView {
     void displayCarteName(CarteViewModel viewModel);
     void displayCarteImg(CarteViewModel viewModel);
+    void displayCarteText(CarteViewModel viewModel);
     void displayCarteNotFound();
     void displayError();
 }

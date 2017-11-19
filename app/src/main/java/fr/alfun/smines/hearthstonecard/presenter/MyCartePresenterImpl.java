@@ -25,9 +25,10 @@ public class MyCartePresenterImpl implements MyCartePresenter {
     public void load(String name) {
         try{
             Carte carte = interactor.getCarteByName(name);
-            CarteViewModel viewModel = new CarteViewModel(carte.getName(), carte.getImg());
+            CarteViewModel viewModel = new CarteViewModel(carte.getName(), carte.getImg(), carte.getText());
             view.displayCarteName(viewModel);
             view.displayCarteImg(viewModel);
+            view.displayCarteText(viewModel);
         }catch (HearthstoneRepositoryException e) {
             view.displayCarteNotFound();
         }catch (HearthstoneCardNotFoundException e) {

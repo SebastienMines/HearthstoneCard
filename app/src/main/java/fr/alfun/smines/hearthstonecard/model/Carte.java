@@ -7,10 +7,12 @@ package fr.alfun.smines.hearthstonecard.model;
 public class Carte {
     private String name;
     private String img;
+    private String text;
 
-    public Carte(String name, String img) {
+    public Carte(String name, String img, String text) {
         this.name = name;
         this.img = img;
+        this.text = text;
     }
 
     public String getName() {
@@ -19,5 +21,9 @@ public class Carte {
 
     public String getImg() {
         return img;
+    }
+
+    public String getText() {
+        return text;
     }
 }
