@@ -35,6 +35,8 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
     ImageView imageCarte;
     @BindView(R.id.text_carte_solo)
     TextView carteTextView;
+    @BindView(R.id.text_carte_description)
+    TextView carteFlavorTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,11 @@ public class CarteActivity extends AppCompatActivity implements CarteActivityVie
     @Override
     public void displayCarteText(CarteViewModel viewModel) {
         carteTextView.setText(Html.fromHtml(viewModel.getText()));
+    }
+
+    @Override
+    public void displayCarteFlavor(CarteViewModel viewModel) {
+        carteFlavorTextView.setText(viewModel.getFlavor());
     }
 
     @Override

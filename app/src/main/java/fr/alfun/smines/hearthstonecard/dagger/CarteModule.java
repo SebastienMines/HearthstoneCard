@@ -112,6 +112,16 @@ public class CarteModule {
         }
 
         @Override
+        public void displayCarteFlavor(final CarteViewModel viewModel) {
+            executor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    view.displayCarteFlavor(viewModel);
+                }
+            });
+        }
+
+        @Override
         public void displayCarteNotFound() {
             executor.execute(new Runnable() {
                 @Override

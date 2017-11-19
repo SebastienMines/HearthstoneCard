@@ -8,11 +8,13 @@ public class CarteViewModel {
     private final String name;
     private final String img;
     private final String text;
+    private final String flavor;
 
-    public CarteViewModel(String name, String img, String text) {
+    public CarteViewModel(String name, String img, String text, String flavor) {
         this.name = name;
         this.img = img;
         this.text = text;
+        this.flavor = flavor;
     }
 
     public String getName() {
@@ -25,5 +27,9 @@ public class CarteViewModel {
 
     public String getText() {
         return text;
+    }
+
+    public String getFlavor() {
+        return flavor;
     }
 }

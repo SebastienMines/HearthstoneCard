@@ -18,5 +18,5 @@ public interface ExtensionService {
             "X-Mashape-Key: f7pY3SgA7Umsh2HCYXbINnBA8IpQp1vVPiljsn4MkWZl3DXzfy"
     })
     @GET("cards/sets/{set}?collectible=1&locale=frFR")
-    Call<Extension> getCardByExtension(@Path("set") String name);
+    Call<List<Carte>> getCardByExtension(@Path("set") String name);
 }

@@ -10,6 +10,7 @@ public interface CarteActivityView {
     void displayCarteName(CarteViewModel viewModel);
     void displayCarteImg(CarteViewModel viewModel);
     void displayCarteText(CarteViewModel viewModel);
+    void displayCarteFlavor(CarteViewModel viewModel);
     void displayCarteNotFound();
     void displayError();
 }

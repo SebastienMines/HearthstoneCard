@@ -1,9 +1,12 @@
 package fr.alfun.smines.hearthstonecard.presenter;
 
+import java.util.List;
+
 import fr.alfun.smines.hearthstonecard.activity.ExtensionActivityView;
 import fr.alfun.smines.hearthstonecard.exception.HearthstoneCardNotFoundException;
 import fr.alfun.smines.hearthstonecard.exception.HearthstoneRepositoryException;
 import fr.alfun.smines.hearthstonecard.interactor.MyExtensionInteractor;
+import fr.alfun.smines.hearthstonecard.model.Carte;
 import fr.alfun.smines.hearthstonecard.model.Extension;
 import fr.alfun.smines.hearthstonecard.viewModel.CarteViewModel;
 import fr.alfun.smines.hearthstonecard.viewModel.ExtensionViewModel;
@@ -25,8 +28,8 @@ public class MyExtensionPresenterImpl implements MyExtensionPresenter {
     @Override
     public void load(String name) {
         try{
-            Extension extension = interactor.getExtensionByName(name);
-            ExtensionViewModel viewModel = new ExtensionViewModel(extension.getCartes());
+            List<Carte> extension = interactor.getExtensionByName(name);
+            ExtensionViewModel viewModel = new ExtensionViewModel(extension);
             view.displayExtensionName(viewModel);
         }catch (HearthstoneRepositoryException e){
             view.displayExtensionNotFound();

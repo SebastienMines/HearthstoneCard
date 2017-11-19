@@ -8,11 +8,13 @@ public class Carte {
     private String name;
     private String img;
     private String text;
+    private String flavor;
 
-    public Carte(String name, String img, String text) {
+    public Carte(String name, String img, String text, String flavor) {
         this.name = name;
         this.img = img;
         this.text = text;
+        this.flavor = flavor;
     }
 
     public String getName() {
@@ -25,5 +27,9 @@ public class Carte {
 
     public String getText() {
         return text;
+    }
+
+    public String getFlavor() {
+        return flavor;
     }
 }

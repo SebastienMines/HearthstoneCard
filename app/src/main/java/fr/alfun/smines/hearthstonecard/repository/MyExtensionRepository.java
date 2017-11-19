@@ -12,5 +12,5 @@ import fr.alfun.smines.hearthstonecard.model.Extension;
  */
 
 public interface MyExtensionRepository {
-    Extension getCarteByExtension(String name) throws HearthstoneCardNotFoundException, HearthstoneRepositoryException;
+    List<Carte> getCarteByExtension(String name) throws HearthstoneCardNotFoundException, HearthstoneRepositoryException;
 }

@@ -21,7 +21,7 @@ public class MyExtensionRepositoryImpl implements MyExtensionRepository {
     private static final String BASE_URL = "https://omgvamp-hearthstone-v1.p.mashape.com/";
 
     @Override
-    public Extension getCarteByExtension(String name) throws HearthstoneCardNotFoundException, HearthstoneRepositoryException {
+    public List<Carte> getCarteByExtension(String name) throws HearthstoneCardNotFoundException, HearthstoneRepositoryException {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
@@ -31,7 +31,7 @@ public class MyExtensionRepositoryImpl implements MyExtensionRepository {
         ExtensionService service = retrofit.create(ExtensionService.class);
 
         try {
-            Extension extension = service.getCardByExtension(name).execute().body();
+            List<Carte> extension = service.getCardByExtension(name).execute().body();
             if(extension==null) throw new HearthstoneCardNotFoundException();
             return extension;
         }catch (IOException e){
